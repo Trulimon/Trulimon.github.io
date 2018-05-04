@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />    
+    <title>Домашнее задание. Анимированная галерея картинок.</title>
+    <style>
+        body{
+            margin: 50px;
+            padding: 50px;
+            background: #f1eacf;            
+            font: 200 1.2em/1.5 sans-serif;            
+        }
+        h1,h2{
+            font-weight: 600;
+            text-align: center;
+        }
+        .disk{
+            background: rgb(200, 241, 158);
+            margin: 50px;
+            padding: 30px;
+        }
+        .disk_00{            
+            position: relative;            
+            color: #e61717;           
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            background: rgba(0, 0, 0, 0.733);
+            transition: 100s;
+        }
+        .disk_01{
+            position:absolute;           
+            width: 200px;
+            height: 200px;
+            top: 50px;
+            left: 50px; 
+            text-align: center;
+            border-radius: 100px;
+        }        
+        .disk_00:hover{
+            transform: rotate(7200deg);
+        }
+        .ball_00{
+            height: 300px;
+            position: relative;
+            margin: 50px;
+            padding: 30px;
+            background: aqua;
+        }
+        .ball_01{
+            position: absolute;
+            background: #fff;
+            text-align: center;
+            color: blueviolet;
+            border-radius: 5px;
+            height: 200px;
+            width: 200px;
+            transition-duration: .5s;
+        }
+        .ball_01 img{
+            width: 80%;
+        }
+        .ball_01:active{
+            height: 280px;
+            width: 350px;            
+        }
+        .tmp{
+            height: 300px;
+            position: relative;
+            margin: 50px;
+            padding: 30px;
+            background: rgb(222, 201, 235); 
+        }        
+        .tmp_00 {
+            background: rgb(188, 224, 151);
+            height: 50px;
+            width: 100px;            
+        }  
+        .z1:hover{
+            transition: 5s;
+            transform: translateX(1000px);
+        }
+        .z2:hover{
+            transition: 3s;
+            transform: translateX(1000px) rotate(180deg);
+        }
+        .z3:hover{
+            transition: 1.5s;
+            transform: translateX(1000px) rotate(360deg);
+        }
+        
+    </style>
+</head>
+    <body>
+        <header><h1>Анимированные картинки</h1></header>
+        <main>
+            <div class="disk">
+                <h2>Винил "Elvis is alive"</h2>
+                <div class="disk_00">            
+                    <div class="disk_01"> 
+                        <img src="http://img1.vmuzike.org/artist/gallery/4f4/78f/66984_big.jpg"
+                        alt="foto Elvis" class="disk_01">                
+                    </div>            
+                </div>        
+                <p>При наведении на диск, он начинает вращаться</p>
+            </div>
+            
+            <div class="ball_00">
+                <h2>Картинка увеличивающаяся при нажатии</h2>
+                <div class="ball_01">
+                    <p>Белый блок увелится при нажатии на него</p>
+                    <img src="https://cdn.pixabay.com/photo/2015/01/17/21/50/insect-602547__340.png"
+                    alt="avto">        
+                </div>
+            </div>
+            
+            <div class="tmp">
+                <h2>Гонки</h2>
+                <div class="tmp_00 z3">
+                        <p>Волга</p>                    
+                    </div>                 
+                <div class="tmp_00 z2">
+                    <p>Москвич</p>                                
+                </div>
+                <div class="tmp_00 z1">
+                        <p>Запорожец</p>                    
+                    </div>          
+            </div>
+        </main>
+    </body>
+</html>
+
+
+<!-- <img src="http://www.art-distrikt.ma/images/produits/p15tk1a1nn1ip15c61b3fe61ghtc.jpg">
+<img src="http://forumuploads.ru/uploads/000a/d1/e0/187-2.jpg">
+<img src="https://openclipart.org/image/2400px/svg_to_png/1546/molumen-GAZ-21-1.png">             -->
